@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.ForecastFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:id="@+id/imageBG"
+        />
+
+    <com.john.waveview.WaveView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/wave_view"
+        android:background="@color/air"
+        app:above_wave_color="@android:color/white"
+        app:blow_wave_color="@android:color/white"
+        app:wave_height="large"
+        app:wave_hz="fast"
+        app:wave_length="large">
+
+    </com.john.waveview.WaveView>
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="80dp"
+        android:id="@+id/seekbar_try"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="50dp"
+        android:text="MENEGAH"
+        android:textSize="28sp"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/poppins_bold"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="150dp"
+        android:text="80 %"
+        android:textSize="28sp"
+        android:id="@+id/persen"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/poppins_bold"
+        />
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/AppBar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true"
+        app:elevation="0dp"
+        android:background="@android:color/transparent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/custom_toolbar"
+            />
+    </android.support.design.widget.AppBarLayout>
+</FrameLayout>

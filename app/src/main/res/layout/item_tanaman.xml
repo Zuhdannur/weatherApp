@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:layout_width="100dp"
+        android:id="@+id/detail"
+        android:background="@android:color/darker_gray"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardBackgroundColor="@color/card_back"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="6dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageTanaman"
+                android:src="@color/card_front"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                />
+            <!--<ImageView-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:id="@+id/imageTanaman"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:background="@color/card_front"-->
+                <!--/>-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nama_tanaman"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="NAMA TANAMAN"
+                android:textSize="10sp"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@android:color/black"
+                android:layout_below="@+id/imageTanaman"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nama_tanaman"
+                android:text="Jenis Tanah"
+                android:layout_centerHorizontal="true"
+                android:textSize="8sp"
+                android:fontFamily="@font/poppins_light"
+                android:id="@+id/jenis_tanah"
+                android:layout_marginBottom="8dp"
+                />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</FrameLayout>

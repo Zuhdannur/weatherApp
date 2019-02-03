@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Text1"
+        android:id="@+id/weather_now"
+        android:icon="@drawable/ic_icon_home"
+        />
+
+    <item
+        android:title="Text 3"
+        android:id="@+id/suggest_petani"
+        android:icon="@drawable/ic_icon_seed"
+        />
+    <item
+        android:title="Text2"
+        android:id="@+id/daily_weather"
+        android:icon="@drawable/ic_icon_hujan"
+        />
+    <item
+        android:title="Text 3"
+        android:id="@+id/setting"
+        android:icon="@drawable/ic_icon_coge"
+        />
+</menu>
