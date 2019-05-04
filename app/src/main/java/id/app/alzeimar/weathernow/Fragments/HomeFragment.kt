@@ -64,7 +64,6 @@ class HomeFragment : BaseFragment(),HomeVIew.View,CuacaView.View {
                     //Toast.makeText(context,""+result.data.rows!![0].day!!.morning!!.time,Toast.LENGTH_LONG).show()
                 },
                         {
-                            error-> Toast.makeText(context,error.message,Toast.LENGTH_LONG).show()
                         }
                 )
     }

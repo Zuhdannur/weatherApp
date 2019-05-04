@@ -19,6 +19,7 @@ import id.app.alzeimar.weathernow.FragmentVP.BaseFragment
 import id.app.alzeimar.weathernow.Fragments.DailyFragment
 import id.app.alzeimar.weathernow.Fragments.ForecastFragment
 import id.app.alzeimar.weathernow.Fragments.HomeFragment
+import id.app.alzeimar.weathernow.Fragments.SettingFragment
 import id.app.alzeimar.weathernow.MainVP.MainActivityVP
 import id.app.alzeimar.weathernow.MainVP.MainActvityPresenter
 import kotlinx.android.synthetic.main.activity_main.*
@@ -61,6 +62,10 @@ class MainActivity : AppCompatActivity(),MainActivityVP.View {
                     presenter.addFragment(ForecastFragment())
                     //toolbar.setBackgroundColor(Color.parseColor("#37AAE1"))
                     //supportActionBar!!.title = "Tanaman"
+                    return true
+                }
+                R.id.setting->{
+                    presenter.addFragment(SettingFragment())
                     return true
                 }
 

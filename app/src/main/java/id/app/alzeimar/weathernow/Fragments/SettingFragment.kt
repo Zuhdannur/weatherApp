@@ -1,0 +1,46 @@
+package id.app.alzeimar.weathernow.Fragments
+
+import android.content.Context
+import android.net.Uri
+import android.os.Bundle
+import android.support.v4.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.TextView
+import id.app.alzeimar.weathernow.FragmentVP.BaseFragment
+import id.app.alzeimar.weathernow.MainActivity
+
+import id.app.alzeimar.weathernow.R
+import kotlinx.android.synthetic.main.custom_toolbar.view.*
+
+// TODO: Rename parameter arguments, choose names that match
+// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
+private const val ARG_PARAM1 = "param1"
+private const val ARG_PARAM2 = "param2"
+
+/**
+ * A simple [Fragment] subclass.
+ * Activities that contain this fragment must implement the
+ * [SettingFragment.OnFragmentInteractionListener] interface
+ * to handle interaction events.
+ * Use the [SettingFragment.newInstance] factory method to
+ * create an instance of this fragment.
+ *
+ */
+class SettingFragment : BaseFragment(){
+    override fun getLayout(): Int {
+        return R.layout.fragment_setting
+    }
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
+                              savedInstanceState: Bundle?): View? {
+        val view = inflater.inflate(R.layout.fragment_setting, container, false)
+        val textView: TextView = view.findViewById(R.id.toolbar_title)
+        textView.setText("Settings")
+        (activity as MainActivity).toolbar = view.toolbar_custom
+        return view
+    }
+
+
+}

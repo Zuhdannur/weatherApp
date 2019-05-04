@@ -42,12 +42,15 @@ private const val ARG_PARAM2 = "param2"
 class DailyFragment : BaseFragment(),HomeVIew.View,TanamanView.View {
 
     override fun setView(data: Data) {
-        var i = 0
+        if(data != null){
+            var i = 0
 
             data.rows!!.forEach {
                 tanamanList.add(Tanaman("${it.kota}","${it.tanaman}"))
             }
-                view!!.gvTanaman.adapter = TanamanGA(context!!,tanamanList)
+            view!!.gvTanaman.adapter = TanamanGA(context!!,tanamanList)
+        }
+
 
     }
 

@@ -31,7 +31,7 @@ interface ApiInterface {
                         .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                         .addConverterFactory(GsonConverterFactory.create())
                         .client(client)
-                        .baseUrl("http://128.199.155.45/")
+                        .baseUrl("http://bdgweather.derazu.tech/")
                         .build()
                 return retrofit.create(ApiInterface::class.java)
             }

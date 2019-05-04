@@ -45,4 +45,6 @@ dependencies {
     implementation 'com.github.john990:WaveView:v0.9'
     implementation 'de.hdodenhof:circleimageview:3.0.0'
     implementation 'com.github.ar-android:AndroidSvgLoader:1.0.1'
+
+    implementation 'com.github.zcweng:switch-button:0.0.3@aar'
 }
